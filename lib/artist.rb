@@ -16,14 +16,11 @@ class Artist
 
   def self.all
     @@all
-    # all = []
-    # self.each do |name|
-    #   all << name
-    # end
-    # all
-    #   binding.pry
   end
 
+  def add_song(name)
+    Song.artist = name
+  end
 
 
 
