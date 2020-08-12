@@ -27,18 +27,16 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    # binding.pry
     if @@all.find {|artist| artist.name == name}
       @@all.find {|artist| artist.name == name}
     else
       self.new(name)
     end
-    # if @name != name
-    #   self.new(name)
-    # else
-    #   add_song(name)
-    # end
-    # binding.pry
+  
+  end
+
+  def print_songs
+    puts "#{self.songs}"
   end
 
 end
