@@ -24,7 +24,7 @@ class Artist
 
   def songs
     Song.all.select {|song| song.artist == self}
-    binding.pry
+    # binding.pry
   end
 
   def self.find_or_create_by_name(name)
@@ -36,8 +36,9 @@ class Artist
 
   end
 
-  def print_songs
-    puts "#{self.songs}"
+  def self.print_songs
+    self.all.each{|song| puts "#{song.name}"}
+    # puts "#{self.songs}"
 
 
     # puts "#{self.songs.collect{|song| song.name = self}}"
