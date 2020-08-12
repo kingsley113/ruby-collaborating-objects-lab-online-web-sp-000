@@ -33,7 +33,6 @@ class Artist
       @name = name
     end
     # binding.pry
-    self
   end
 
 end
