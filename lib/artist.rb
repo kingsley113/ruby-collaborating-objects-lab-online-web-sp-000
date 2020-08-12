@@ -38,7 +38,7 @@ class Artist
   def print_songs
 
 
-
+    binding.pry
     puts "#{self.songs.collect{|song| song.name = self}}"
   end
 
