@@ -37,7 +37,7 @@ class Artist
 
   def print_songs
     binding.pry
-    self.songs
+    # self.songs
     puts "#{self.songs}"
   end
 
