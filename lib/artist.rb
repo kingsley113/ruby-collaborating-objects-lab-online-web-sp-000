@@ -22,6 +22,8 @@ class Artist
     Song.artist = name
   end
 
-
+  def songs
+    Song.collect {|artist| Song.artist == artist}
+  end
 
 end
