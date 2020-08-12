@@ -39,7 +39,7 @@ class Artist
 
 
 
-    puts "#{self.songs.select{|song| song.name = self}}"
+    puts "#{self.songs.collect{|song| song.name = self}}"
   end
 
 end
