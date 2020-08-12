@@ -8,7 +8,7 @@ class Artist
   end
 
   def self.all
-    ObjectSpace.each_object(Artist)
+    ObjectSpace.each_object(Artist).to_a
     # all = []
     # self.each do |name|
     #   all << name
