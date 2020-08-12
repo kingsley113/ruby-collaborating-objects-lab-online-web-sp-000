@@ -32,7 +32,7 @@ class Artist
     else
       @name = name
     end
-    binding.pry
+    # binding.pry
     self
   end
 
