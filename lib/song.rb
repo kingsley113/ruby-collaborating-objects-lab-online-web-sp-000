@@ -19,7 +19,7 @@ class Song
   end
 
   def artist_name=(name)
-    name.find_or_create_by_name
+    find_or_create_by_name(name)
 
   end
 
