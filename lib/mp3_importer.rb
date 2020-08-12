@@ -1,14 +1,15 @@
 require 'pry'
 
 class MP3Importer
-  attr_accessor :files
+  attr_accessor :files, :path
+  
   def initialize(file_path)
-    files(file_path)
+    @path = file_path
   end
 
-  def files(path)
+  def files
     # binding.pry
-    @files = Dir.entries("#{path}").select {|f| !File.directory? f}
+    @files = Dir.entries("#{@path}").select {|f| !File.directory? f}
     # binding.pry
   end
 
