@@ -4,7 +4,7 @@ class MP3Importer
 
 
 def files
-  Dir[./spec/mp3s]
+  Dir[./spec/mp3s/]
   binding.pry
 end
 
