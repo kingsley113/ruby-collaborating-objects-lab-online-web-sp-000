@@ -37,7 +37,7 @@ class Artist
 
   def print_songs
 
-    self.songs.select(|song| songs.song = self)
+    self.songs.select{|song| songs.song = self}
 
     puts "#{self.songs}"
   end
