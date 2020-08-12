@@ -8,7 +8,13 @@ class Artist
   end
 
   def self.all
-    self
+    all = []
+    self.each do |name|
+      all << name
+    end
+    all
+      binding.pry
+    end
     # binding.pry
   end
 
