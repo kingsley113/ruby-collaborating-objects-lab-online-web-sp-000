@@ -30,7 +30,7 @@ class Artist
     if @name.nil?
       self.new(name)
     else
-      @name = self
+      @name = name
     end
     binding.pry
     self
