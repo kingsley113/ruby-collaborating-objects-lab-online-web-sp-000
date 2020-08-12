@@ -8,12 +8,13 @@ class Artist
   end
 
   def self.all
-    all = []
-    self.each do |name|
-      all << name
-    end
-    all
-      binding.pry
+    ObjectSpace.each_object(Artist)
+    # all = []
+    # self.each do |name|
+    #   all << name
+    # end
+    # all
+    #   binding.pry
   end
 
 
