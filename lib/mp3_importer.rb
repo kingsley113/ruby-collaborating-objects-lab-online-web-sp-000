@@ -2,10 +2,13 @@ require 'pry'
 
 class MP3Importer
 
+  def initialize(file_path)
+    files(file_path)
+  end
 
-def files
+def files(path)
   binding.pry
-  Dir["./spec/mp3s/"]
+  Dir["path"]
   # binding.pry
 end
 
