@@ -29,7 +29,7 @@ class Artist
   def self.find_or_create_by_name(name)
     binding.pry
     if @@all.find {|artist| artist == name}
-      self.name
+      @@all.find {|artist| artist == name}
     else
       self.new(name)
     end
