@@ -36,7 +36,7 @@ class Artist
   end
 
   def print_songs
-    find_or_create_by_name(self)
+    self.find_or_create_by_name
 
 
     # puts "#{self.songs.collect{|song| song.name = self}}"
