@@ -8,7 +8,8 @@ class Artist
   end
 
   def self.all
-    self.collect
+    self
+    binding.pry
   end
 
 
