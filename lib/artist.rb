@@ -30,7 +30,7 @@ class Artist
     if @name != name
       self.new(name)
     else
-      @name = name
+      add_song(name)
     end
     # binding.pry
   end
