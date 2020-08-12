@@ -27,11 +27,16 @@ class Artist
   end
 
   def self.find_or_create_by_name(name)
-    if @name != name
-      self.new(name)
+    if @@all.find {|artist| artist == name}
+      @@all.find {|artist| artist == name}
     else
-      add_song(name)
+      self.new(name)
     end
+    # if @name != name
+    #   self.new(name)
+    # else
+    #   add_song(name)
+    # end
     # binding.pry
   end
 
