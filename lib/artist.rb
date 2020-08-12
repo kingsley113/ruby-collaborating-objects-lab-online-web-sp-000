@@ -39,7 +39,7 @@ class Artist
 
 
     binding.pry
-    puts "#{self.songs.collect{|song| song.name = self}}"
+    # puts "#{self.songs.collect{|song| song.name = self}}"
   end
 
 end
