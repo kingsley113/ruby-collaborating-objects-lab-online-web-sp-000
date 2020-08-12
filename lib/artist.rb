@@ -37,9 +37,9 @@ class Artist
 
   def print_songs
 
-    self.songs.select{|song| song.name = self}
+    
 
-    puts "#{self.songs}"
+    puts "#{self.songs.select{|song| song.name = self}}"
   end
 
 end
