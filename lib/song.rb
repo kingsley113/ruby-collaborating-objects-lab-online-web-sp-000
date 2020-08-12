@@ -5,7 +5,7 @@ class Song
 
   @@all = []
 
-  def initialize(name, artist = "")
+  def initialize(name)
     @name = name
     save
   end
@@ -26,7 +26,7 @@ class Song
   def self.new_by_filename(filename)
     song_info = filename.split(" - ")
 
-    song = self.new(song_info[1], song_info[0])
+    song = self.new(song_info[1])
     # binding.pry
     # song.name = filename.split(" - ")[1]
     # song.artist = filename.split(" - ")[0]
