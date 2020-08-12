@@ -3,12 +3,18 @@ require 'pry'
 class Artist
   attr_accessor :name
 
+  @@all = []
+
   def initialize(name)
     @name = name
+    save
   end
 
+  def save
+    @@all << self
+
   def self.all
-    self.name
+    @@all
     # all = []
     # self.each do |name|
     #   all << name
