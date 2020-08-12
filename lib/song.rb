@@ -28,7 +28,7 @@ class Song
     # binding.pry
     @name = filename.split(" - ")[1]
     @name
-    binding.pry
+    # binding.pry
   end
 
 end
