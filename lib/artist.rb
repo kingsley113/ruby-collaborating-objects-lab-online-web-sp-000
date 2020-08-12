@@ -8,7 +8,7 @@ class Artist
   end
 
   def self.all
-    self
+    self.name
     # all = []
     # self.each do |name|
     #   all << name
