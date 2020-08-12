@@ -14,8 +14,6 @@ class Artist
     end
     all
       binding.pry
-    end
-    # binding.pry
   end
 
 
